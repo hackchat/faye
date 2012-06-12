@@ -28,7 +28,7 @@ Thread.new do
                  :data => parsed["message"],
                  :ext => {:auth_token => "suppppyallll"}
                  }
-      uri = URI.parse("http://localhost:9292/faye")
+      uri = URI.parse("http://hackchat.in:9292/faye")
       Net::HTTP.post_form(uri, :message => message.to_json) if uri
     end
   end
