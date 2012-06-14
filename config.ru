@@ -21,7 +21,6 @@ class ServerAuth
     end
     callback.call(message)
   end
-
 end
 
 Faye::WebSocket.load_adapter('thin')
