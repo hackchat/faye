@@ -19,8 +19,10 @@ class ServerAuth
         end
       end
     end
+    puts message.inspect
     callback.call(message)
   end
+
 end
 
 Faye::WebSocket.load_adapter('thin')
